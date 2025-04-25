@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Bio from "./pages/Bio/Biosite";
 
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -48,7 +47,6 @@ function App() {
       <>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/bio" element={<Bio />} />
           {/* Adicione mais rotas conforme necessário */}
         </Routes>
         <Analytics />
